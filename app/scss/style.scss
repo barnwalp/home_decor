@@ -11,16 +11,30 @@ nav{
     padding-right: 0px;
 }
 
+// .section {
+//   &-column-photo {
+//     display: inline-block;
+//     width:30%;
+//     height: 23rem;
+//     margin: 1.5%;
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       // object-fit: cover;
+//     }
+//   }
+// }
+
 .section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // grid-auto-rows: min-content;
   &-column-photo {
-    display: inline-block;
-    width:30%;
-    height: 23rem;
-    margin: 1.5%;
+    margin: 15px;
     img {
       width: 100%;
       height: 100%;
-      // object-fit: cover;
+      object-fit: cover;
     }
   }
 }
