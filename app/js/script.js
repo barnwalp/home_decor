@@ -1,16 +1,21 @@
-console.log('test');
 let figures = document.querySelectorAll('.section-column-photo');
 let images = document.querySelectorAll('.section-column-photo img');
 let buttons = document.querySelectorAll('.btn');
 
-function filterSelection(element, button) {
+// Implementing filtering image from dropdown
+dropdown = document.getElementById('dropdown_btn');
+dropdown.onchange = function() {
+  filterSelection(dropdown.value);
+}
+
+// filter selection function
+function filterSelection(button, element=undefined) {
   for (let i=0; i<buttons.length; i++) {
     buttons[i].classList.remove('active');
-    // if(buttons[i].className == button) {
-    //   buttons[i].classList.add('active');
-    // }
   }
-  element.classList.add('active');
+  if(element != undefined) {
+    element.classList.add('active');
+  }
   if(button == "all") {
     for(let i=0; i<images.length; i++) {
       figures[i].classList.add('show');
