@@ -21,10 +21,17 @@ nav img {
   background-color: white;
   padding: 10px 20px;
   font-size: 1.2rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
-.btn-container .btn:hover {
+.btn-container .btn:hover, .btn-container .btn:active {
   cursor: pointer;
+  background-color: #DD5A44;
+  color: white;
+}
+
+.btn-container .btn.active {
   background-color: #DD5A44;
   color: white;
 }
@@ -37,6 +44,7 @@ nav img {
 }
 
 .section-column-photo {
+  display: none;
   background-color: black;
   margin: 15px;
 }
@@ -46,10 +54,16 @@ nav img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .section-column-photo img:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.show {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
