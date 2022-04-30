@@ -1,14 +1,32 @@
 nav {
-  font-family: 'Roboto' sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  margin-bottom: 0.25em;
-  border-bottom: 1px solid grey;
-  padding: 0.5em;
-  padding-left: 0px;
-  width: 30%;
-  margin-left: 0.5em;
-  padding-right: 0px;
+  margin-bottom: 15px;
+}
+
+nav img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+}
+
+.btn-container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.btn-container .btn {
+  border: 1px solid #DD5A44;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.btn-container .btn:hover {
+  cursor: pointer;
+  background-color: #DD5A44;
+  color: white;
 }
 
 .section {
@@ -19,6 +37,7 @@ nav {
 }
 
 .section-column-photo {
+  background-color: black;
   margin: 15px;
 }
 
@@ -27,5 +46,10 @@ nav {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.section-column-photo img:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
