@@ -63,7 +63,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   &-column-photo {
-    display: none;
+    // display: none;
     background-color: black;
     margin: 15px;
     img {
@@ -81,4 +81,7 @@ nav {
 
 .show {
   display: block;
+}
+.hide {
+  display: none;
 }

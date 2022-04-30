@@ -44,7 +44,6 @@ nav img {
 }
 
 .section-column-photo {
-  display: none;
   background-color: black;
   margin: 15px;
 }
@@ -65,5 +64,9 @@ nav img {
 
 .show {
   display: block;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
